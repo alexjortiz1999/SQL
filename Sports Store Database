@@ -1,0 +1,20 @@
+CREATE TABLE sports (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, size TEXT);
+
+INSERT into sports VALUES (1, "hat", 5, 12.99, "XS");
+INSERT into sports VALUES (2, "shirt", 7, 15.99, "S");
+INSERT into sports VALUES (3, "pant", 9, 15.99, "M");
+INSERT into sports VALUES (4, "sock", 2, 8.99, "L");
+INSERT into sports VALUES (5, "belt", 4, 6.99, "XL");
+INSERT into sports VALUES (6, "glove", 6, 5.99, "XS");
+INSERT into sports VALUES (7, "bat", 1, 10.99, "S");
+INSERT into sports VALUES (8, "ball", 7, 3.99, "X");
+INSERT into sports VALUES (9, "bag", 8, 17.99, "X");
+INSERT into sports VALUES (10, "shoes", 5, 20.99, "S");
+INSERT into sports VALUES (11, "shinguards", 6, 4.99, "M");
+INSERT into sports VALUES (12, "headband", 2, 2.99, "L");
+INSERT into sports VALUES (13, "tape", 5, 1.99, "X");
+INSERT into sports VALUES (14, "water bottle", 9, 6.99, "X");
+INSERT into sports VALUES (15, "trophy", 4, 11.99, "X");
+
+--display the database ordered by price
+SELECT * FROM sports ORDER BY price;
