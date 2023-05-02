@@ -1,0 +1,14 @@
+Select Sum(Winner_PTS) from superbowls;
+
+Select MVP from superbowls group by MVP having Winner_Pts > 40 ;
+
+Select Winner, Loser from superbowls where City = "Houston" OR City = "Tampa";
+
+SELECT COUNT(*),
+    CASE 
+        WHEN Winner_Pts > 40 THEN "Elite"
+        WHEN Winner_Pts > 30 THEN "Avg"
+        ELSE "ok"
+    END as "Top_Games"
+FROM superbowls
+GROUP BY Top_games;
